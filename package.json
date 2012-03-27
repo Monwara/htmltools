@@ -1,0 +1,22 @@
+{
+  "name" : "htmltools",
+  "description" : "JavaScript utility functions for working with HTML strings (not DOM)",
+  "version" : "0.0.1",
+  "homepage" : "https://github.com/HerdHound/htmltools",
+  "keywords" : ["util", "browser", "html", "generator", "string"],
+  "author" : "Monwara LLC",
+  "maintainers": [{
+    "name": "Branko Vukelic",
+    "email": "branko@herdhound.com"
+  }]
+  "contributors" : [],
+  "dependencies" : [],
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  }],
+  "repository" : {
+    "type": "git", 
+    "url": "git://github.com/HerdHound/htmltools.git"},
+  "main" : "htmltools.js"
+}

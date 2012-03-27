@@ -1,0 +1,123 @@
+HTML Tools
+----------
+
+Helper tools for working with HTML strings in javascript. It is _not_ a DOM
+manipulation library. It is meant to be used as a helper utility within
+templates to make them more readable and faster to code.
+
+Installation
+------------
+
+For use with Node.js, you can simply install it with NPM:
+
+    npm install htmltools
+
+For using within browser, you can include htmltools in your AMD project as
+dependency:
+
+    define(['htmltools'], function(html) {
+    
+    });
+
+You can also simply include it as a `<script>` tag:
+
+    <script src="js/htmltools.js"></script>
+
+Basic usage
+-----------
+
+Currently, HTML tools have only one type of functionality, and that's eclosing
+strings in HTML tags. This works only for strings that have a closing tag.
+
+Here's an example using the `<strong>` tag:
+
+    var html = require('htmltools');
+    var s = 'my string';
+    html.strong(s);
+    // returns: '<strong>my strong</strong>'
+
+You can also add attributes by specifying them as attribute-value pairs:
+
+    html.a(s, {href: "http://example.com/"});
+    // returns: '<a href="http://example.com/">my string</a>'
+
+If you do not want to have `html` appear throughout your code, you can overload
+the `String.prototype` and call the `html` methods as `String` methods:
+
+    html.overloadPrototype(); // call once in your main script
+    s.a({href: "http://example.com/"});
+    // returns: '<a href="http://example.com/">my string</a>'
+
+Usage notes
+-----------
+
+HTML tools are very generic. They do not perform any escaping or validation.
+You can add any attribute to any HTML element, legal or illegal, and you can
+also mess attributes up by inserting a space in attribute names or by inserting
+double quotes in attribute values. These issues will be addressed in future
+versions, but for now, HTML tools will rely on good behavior of developers.
+
+Supported tags
+--------------
+
+HTML tools uses the `enclose()` method to enlose strings in any tag. For
+convenience, though, several HTML tags have shortcut methods. Those are:
+
+ + p 
+ + a 
+ + strong (with 'b' alias)
+ + em (with 'i' alias)
+ + button
+ + code 
+ + pre 
+ + blockquote 
+ + div 
+ + li 
+ + dd 
+ + dt 
+ + td 
+ + th
+ + tr 
+ + h1 
+ + h2 
+ + h3 
+ + h4 
+ + h5 
+ + h6 
+ + tt
+
+If you need any other tags, you can use the `enclose()` method like this:
+
+    html.enclose(s, 'mytag');
+    // returns: '<mytag>my string</mytag>'
+
+Supported platforms
+-------------------
+
+HTML tools should run fine on Node.js, AMD-compliant workflows (Require.js),
+and in most browsers as `window.html` global.
+
+License
+-------
+
+Released under MIT license.
+
+Copyright (c)2012, by Monwara LLC. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
