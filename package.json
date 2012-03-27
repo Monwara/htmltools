@@ -18,8 +18,8 @@
     "url": "git://github.com/Monwara/htmltools.git"
   },
   "bugs": { 
-    "url": "https://github.com/Monwara/htmltools/issues"
+    "url": "https://github.com/Monwara/htmltools/issues",
     "email": "branko@herdhound.com"
-  }
+  },
   "main" : "htmltools.js"
 }
