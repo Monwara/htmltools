@@ -1,8 +1,8 @@
 {
   "name" : "htmltools",
   "description" : "JavaScript utility functions for working with HTML strings (not DOM)",
-  "version" : "0.0.1",
-  "homepage" : "https://github.com/HerdHound/htmltools",
+  "version" : "0.0.2",
+  "homepage" : "https://github.com/Monwara/htmltools",
   "keywords" : ["util", "browser", "html", "generator", "string"],
   "author" : "Monwara LLC",
   "maintainers": [{
@@ -15,7 +15,11 @@
   }],
   "repository" : {
     "type": "git", 
-    "url": "git://github.com/HerdHound/htmltools.git"
+    "url": "git://github.com/Monwara/htmltools.git"
   },
+  "bugs": { 
+    "url": "https://github.com/Monwara/htmltools/issues"
+    "email": "branko@herdhound.com"
+  }
   "main" : "htmltools.js"
 }

@@ -97,6 +97,13 @@ Supported platforms
 HTML tools should run fine on Node.js, AMD-compliant workflows (Require.js),
 and in most browsers as `window.html` global.
 
+Bus and feature requests
+------------------------
+
+Please use our 
+[GitHub issue tracker](https://github.com/Monwara/htmltools/issues) to report 
+issues and request new features.
+
 License
 -------
 
