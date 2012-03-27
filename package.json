@@ -8,15 +8,14 @@
   "maintainers": [{
     "name": "Branko Vukelic",
     "email": "branko@herdhound.com"
-  }]
-  "contributors" : [],
-  "dependencies" : [],
+  }],
   "licenses": [{
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
   }],
   "repository" : {
     "type": "git", 
-    "url": "git://github.com/HerdHound/htmltools.git"},
+    "url": "git://github.com/HerdHound/htmltools.git"
+  },
   "main" : "htmltools.js"
 }
