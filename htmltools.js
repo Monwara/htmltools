@@ -2,7 +2,7 @@
  * Various helper tools for working with HTML strings
  *
  * @author Monwara LLC / Branko Vukelic <branko@monwara.com>
- * @version 0.0.2
+ * @version 0.0.3
  * @license MIT
  */
 

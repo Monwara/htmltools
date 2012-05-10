@@ -1,7 +1,7 @@
 {
   "name" : "htmltools",
   "description" : "JavaScript utility functions for working with HTML strings (not DOM)",
-  "version" : "0.0.2",
+  "version" : "0.0.3",
   "homepage" : "https://github.com/Monwara/htmltools",
   "keywords" : ["util", "browser", "html", "generator", "string"],
   "author" : "Monwara LLC",
