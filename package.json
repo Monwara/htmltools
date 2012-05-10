@@ -7,7 +7,7 @@
   "author" : "Monwara LLC",
   "maintainers": [{
     "name": "Branko Vukelic",
-    "email": "branko@herdhound.com"
+    "email": "branko@monwara.com"
   }],
   "licenses": [{
     "type": "MIT",
@@ -19,7 +19,7 @@
   },
   "bugs": { 
     "url": "https://github.com/Monwara/htmltools/issues",
-    "email": "branko@herdhound.com"
+    "email": "branko@monwara.com"
   },
   "main" : "htmltools.js"
 }

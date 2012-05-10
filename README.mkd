@@ -97,7 +97,7 @@ Supported platforms
 HTML tools should run fine on Node.js, AMD-compliant workflows (Require.js),
 and in most browsers as `window.html` global.
 
-Bus and feature requests
+Bugs and feature requests
 ------------------------
 
 Please use our 
